@@ -1,3 +1,6 @@
 h1 {
-    font-family: "Spectral", serif;
+    font-family: "Spectral", Garamond, serif;
+    font-size: large;
+    color: darkgrey;
+    text-align: center;
 }
