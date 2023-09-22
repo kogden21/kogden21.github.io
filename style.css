@@ -3,7 +3,7 @@ h1 {
     font-size: 3rem;
     color: darkgrey;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 50px;
     margin-bottom: 5px;
 }
 
@@ -11,6 +11,7 @@ h2 {
     font-family: "Spectral", Garamond, serif;
     color: black;
     text-align: center;
+    margin: 50px;
 }
 
 p {
