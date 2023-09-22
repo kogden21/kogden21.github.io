@@ -11,8 +11,13 @@ h2 {
     text-align: center;
 }
 
-ul {
-    font-family: Verdana, sans-serif;
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: black;
-    padding-left: 50px;
+    text-align: center;
+}
+
+ul {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
 }
