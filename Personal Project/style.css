@@ -1,0 +1,37 @@
+header {
+  padding: 50px;
+  background-color: #DCD2CC;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #afb4bc;
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  display: block;
+  padding: 14px 16px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  background-color: #BDC3CB;
+}
+
+nav li a:hover {
+  background-color: #9da2a9
+}
+
+h1 {
+  font-family: "EB Garamond", Garamond, serif;
+}
+
+p, ul, table {
+  font-family: Verdana, Tahoma, sans-serif;
+}
