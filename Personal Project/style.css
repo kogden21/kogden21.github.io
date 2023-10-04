@@ -33,5 +33,15 @@ h1 {
 }
 
 p, ul, table {
+  padding: 25px;
   font-family: Verdana, Tahoma, sans-serif;
+}
+
+#intro_photo {
+  float: right;
+  padding: 75px 25px 0px 25px;
+}
+
+#intro {
+  background-color: #EDE7DC;
 }
