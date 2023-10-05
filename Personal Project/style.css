@@ -80,5 +80,18 @@ ul {
 
 footer {
   padding: 50px;
-  background-color: #BDC3CB;
+  background-color: #DCD2CC;
+}
+
+#repertoire_heading {
+  margin-top: 100px;
+}
+
+#repertoire_intro {
+  padding-top: 10px;
+}
+
+#videos iframe {
+  margin-left: 50px;
+  margin-bottom: 100px;
 }
