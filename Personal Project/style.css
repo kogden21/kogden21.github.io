@@ -36,7 +36,7 @@ h2, h3 {
   padding-left: 50px;
 }
 
-p, ul {
+p, ul, table {
   padding: 50px;
   font-family: Verdana, Tahoma, sans-serif;
 }
@@ -69,6 +69,11 @@ ul {
   list-style-type: circle;
 }
 
+#memories_list {
+  margin-left: 50px;
+  width: 65%;
+}
+
 #photos {
   display: flex;
   flex-direction: row;
@@ -83,15 +88,45 @@ footer {
   background-color: #DCD2CC;
 }
 
-#repertoire_heading {
+#repertoire_heading, #favorite_composers_heading {
   margin-top: 100px;
 }
 
-#repertoire_intro {
+#repertoire_intro, #favorite_composers_intro {
   padding-top: 10px;
 }
 
 #videos iframe {
   margin-left: 50px;
   margin-bottom: 100px;
+}
+
+table {
+  padding-top: 0px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 100px;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #EDE7DC;
+}
+
+tr:hover {
+  background-color: #dad6cc
+}
+
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #CCAFA5;
+  color: white;
+  font-family: "EB Garamond", Garamond, serif;
+  font-size: 1.25em;
 }
