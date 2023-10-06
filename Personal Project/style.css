@@ -83,6 +83,7 @@ p, ul, table {
 
 footer {
   padding: 50px;
+  margin-top: 100px;
   background-color: #DCD2CC;
 }
 
@@ -129,6 +130,10 @@ th {
   font-size: 1.25em;
 }
 
+#composers h3 {
+  margin-top: 100px;
+}
+
 #composers h3 a {
   font-size: 1.25em;
   color: white;
@@ -139,7 +144,7 @@ th {
   border: 2px #CCAFA5;
 }
 
-#composers a:hover {
+#composers h3 a:hover {
   background-color: #b69e95;
 }
 
@@ -164,4 +169,24 @@ th {
   padding-bottom: 20px;
   margin-top: 0;
   margin-bottom: 0;
+}
+
+.photo_source {
+  display: block;
+  padding-left: 100px;
+  padding-top: 5px;
+  color: #74787f;
+  font-family: Verdana, Tahoma, sans-serif;
+  font-size: 0.75em;
+}
+
+.photo_source:hover {
+  background-color: white;
+  color: #afb4bc;
+}
+
+.footer_note {
+  padding-left: 50px;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
