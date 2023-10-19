@@ -14,6 +14,7 @@ body {
 
 p {
   text-align: justify;
+  font-size: 110%;
 }
 
 a:link {
@@ -32,7 +33,6 @@ a:hover, a:active {
   color: rgb(234, 152, 63);
   text-decoration: none;
   font-weight: bolder;
-  transform: scale(1.5);
 }
 
 header {
@@ -64,13 +64,14 @@ h2 {
 }
 
 h3 {
-  color: #1a0e07;
+  color: rgb(76, 106, 80);
+  font-size: 200%;
   font-family: 'Open Sans', sans-serif;
   font-weight: bold;
   letter-spacing: 1px;
 }
 
-/* Header elements */
+/* Intro elements */
 header h1 {
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 25px;
@@ -86,3 +87,74 @@ header h2 {
   margin: auto;
 }
 
+.summary, .preamble {
+  padding-left: 75px;
+  padding-right: 75px;
+}
+
+.summary {
+  padding-top: 100px;
+  padding-bottom: 25px;
+}
+
+.preamble {
+  padding-top: 25px;
+  margin-bottom: 100px;
+}
+
+/* Sidebar */
+.sidebar {
+  background-image: url("vintage-floral-wallpaper-orange.jpg");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: 45%;
+  background-attachment: fixed;
+}
+
+.sidebar h3 {
+  color: #ffffff;
+  font-family: Garamond, Calisto MT, Times New Roman, serif;
+  font-weight: bold;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #1a0e07;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 25px;
+  width: 30%;
+  text-align: center;
+  font-size: 300%;
+}
+
+.sidebar ul {
+  background-color:#ffffff;
+  border-radius: 25px;
+  padding: 75px;
+  width: 30%;
+  list-style-type: none;
+}
+
+.sidebar li {
+  padding-bottom: 25px;
+}
+
+.design-name {
+  font-size: 200%;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: block;
+}
+
+.design-name:hover, .design-name:active {
+  transform: scale(1.08);
+  animation-delay: 0.5s;
+}
+
+.designer-name {
+  font-size: 110%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.sidebar p {
+  font-size: 110%;
+}
