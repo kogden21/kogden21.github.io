@@ -17,21 +17,22 @@ p {
 }
 
 a:link {
-  color: #FF9636;
+  color: rgb(221, 99, 56);
   text-decoration: none;
   font-weight: bold;
 }
 
 a:visited {
-  color: #FF9636;
+  color: rgb(221, 99, 56);
   text-decoration: none;
   font-weight: bold;
 }
 
 a:hover, a:active {
-  color: #df8133;
-  text-decoration: underline;
+  color: rgb(234, 152, 63);
+  text-decoration: none;
   font-weight: bolder;
+  transform: scale(1.5);
 }
 
 header {
