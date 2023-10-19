@@ -1,0 +1,87 @@
+/* Base CSS */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #1a0e07;
+}
+
+p {
+  text-align: justify;
+}
+
+a:link {
+  color: #FF9636;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:visited {
+  color: #FF9636;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover, a:active {
+  color: #df8133;
+  text-decoration: underline;
+  font-weight: bolder;
+}
+
+header {
+  text-align: center;
+  padding: 125px 0 125px 0;
+  background-image: url("vintage-floral-wallpaper-orange.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  border-top: 12px solid #57896A;
+  border-bottom: 12px solid #57896A;
+}
+
+h1 {
+  color: #ffffff;
+  font-family: Garamond, Calisto MT, Times New Roman, serif;
+  font-size: 500%;
+  font-weight: bold;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: #1a0e07;
+}
+
+h2 {
+  color: #1a0e07;
+  font-size: 120%;
+  letter-spacing: 3px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h3 {
+  color: #1a0e07;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* Header elements */
+header h1 {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 25px;
+  width: 50%;
+  margin: auto;
+  margin-bottom: 25px;
+}
+
+header h2 {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 25px;
+  width: 30%;
+  margin: auto;
+}
+
