@@ -5,7 +5,7 @@ html, body {
 }
 
 body {
-  background-color: #ffffff;
+  background-color: rgb(243, 232, 213);
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -15,6 +15,7 @@ body {
 p {
   text-align: justify;
   font-size: 110%;
+  margin-bottom: 50px;
 }
 
 a:link {
@@ -64,14 +65,14 @@ h2 {
 }
 
 h3 {
-  color: rgb(76, 106, 80);
+  color: #57896A;
   font-size: 200%;
   font-family: 'Open Sans', sans-serif;
   font-weight: bold;
   letter-spacing: 1px;
 }
 
-/* Intro elements */
+/* Body elements */
 header h1 {
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 25px;
@@ -87,45 +88,33 @@ header h2 {
   margin: auto;
 }
 
-.summary, .preamble {
-  padding-left: 75px;
-  padding-right: 75px;
-}
-
 .summary {
   padding-top: 100px;
   padding-bottom: 25px;
 }
 
-.preamble {
+.preamble, .explanation, .participation, .benefits, .requirements {
   padding-top: 25px;
-  margin-bottom: 100px;
+  padding-bottom: 100px;
+}
+
+.summary, .preamble, .explanation, .participation, .benefits, .requirements {
+  padding-left: 75px;
+  padding-right: 75px;
+  width: 66.66%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ffffff;
 }
 
 /* Sidebar */
 .sidebar {
-  background-image: url("vintage-floral-wallpaper-orange.jpg");
-  background-position: left;
-  background-repeat: no-repeat;
-  background-size: 45%;
-  background-attachment: fixed;
-}
-
-.sidebar h3 {
-  color: #ffffff;
-  font-family: Garamond, Calisto MT, Times New Roman, serif;
-  font-weight: bold;
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: #1a0e07;
-  background-color: rgba(255, 255, 255, 0.8);
-  border-radius: 25px;
-  width: 30%;
-  text-align: center;
-  font-size: 300%;
+  background-color: rgb(243, 232, 213);
 }
 
 .sidebar ul {
-  background-color:#ffffff;
+  background-color: rgba(255, 255, 255, 0.5);
   border-radius: 25px;
   padding: 75px;
   width: 30%;
@@ -134,6 +123,15 @@ header h2 {
 
 .sidebar li {
   padding-bottom: 25px;
+}
+
+.sidebar p {
+  font-size: 110%;
+}
+
+.design-selection {
+  padding-top: 20px;
+  padding-left: 20px;
 }
 
 .design-name {
@@ -155,6 +153,35 @@ header h2 {
   font-family: 'Open Sans', sans-serif;
 }
 
-.sidebar p {
-  font-size: 110%;
+footer {
+  text-align: center;
+  display: block;
+  font-size: 200%;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-image: url("vintage-floral-wallpaper-orange.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  border-top: 12px solid #57896A;
+  border-bottom: 12px solid #57896A;
+}
+
+footer a:link, a:visited {
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 25px;
+  color: #1a0e07;
+}
+
+footer a:hover, a:active {
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 25px;
+  color: #57896A;
+  transform: scale(1.08);
+  animation-delay: 0.5s;
 }
