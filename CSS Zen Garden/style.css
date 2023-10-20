@@ -113,11 +113,15 @@ header h2 {
   background-color: rgb(243, 232, 213);
 }
 
+.sidebar h3 {
+  padding-left: 75px;
+}
+
 .sidebar ul {
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 25px;
   padding: 75px;
-  width: 30%;
+  width: 60%;
   list-style-type: none;
 }
 
@@ -131,7 +135,19 @@ header h2 {
 
 .design-selection {
   padding-top: 20px;
-  padding-left: 20px;
+  padding-left: 75px;
+  display: inline;
+  float:left;
+  margin-left: 120px;
+  margin-bottom: 100px;
+}
+
+.design-archives, .zen-resources {
+  padding-top: 20px;
+  padding-left: 75px;
+  display: inline;
+  float:left;
+  margin-right: 120px;
 }
 
 .design-name {
@@ -173,7 +189,6 @@ footer a:link, a:visited {
   padding-right: 20px;
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 25px;
-  color: #1a0e07;
 }
 
 footer a:hover, a:active {
@@ -181,7 +196,6 @@ footer a:hover, a:active {
   padding-right: 20px;
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 25px;
-  color: #57896A;
   transform: scale(1.08);
   animation-delay: 0.5s;
 }
