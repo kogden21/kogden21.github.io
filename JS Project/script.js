@@ -1,7 +1,14 @@
 document.getElementById("play_button").addEventListener("click", shuffleImages);
 
+let image_tiles = document.getElementsByClassName("image_tile");
+for (let image_tile of image_tiles) {
+  image_tile.addEventListener("click", function() {
+    image_tile.classList.toggle("is_flipped");
+  });
+}
+
 function shuffleImages() {
-  let images = document.getElementsByTagName("img");
+  let images = document.getElementsByClassName("image_front");
   let images_src = [];
 
   // Create array of the images' src attributes
@@ -22,3 +29,14 @@ function shuffleImages() {
     images[i].src = images_src[i];
   }
 }
+
+/*
+function resetBoard() {
+  let image_tiles = document.getElementsByClassName("image_tile");
+
+  // 
+  for (let image_tile of image_tiles) {
+    image_tile.classList.toggle("is_flipped");
+  }
+}
+*/

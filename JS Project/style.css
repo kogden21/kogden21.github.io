@@ -1,9 +1,43 @@
-.photos_to_match {
+.images_to_match {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.photos_to_match img {
-  padding: 7px;
+.image_tile {
+  margin: 7px;
+  
+  position: relative;
+  transform-style: preserve-3d;
+  transform-origin: center right;
+  transition: all 0.5s;
+
+  width: 225px;
+  height: 225px;
+  
+  box-shadow: 0px 0px 25px -15px rgba(66, 68, 90, 1);
+}
+
+.image_tile:hover {
+  box-shadow: 0px 0px 40px -15px rgba(7, 7, 10, 1);
+}
+
+.image_side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  
+  backface-visibility: hidden;
+}
+
+.image_back {
+  transform: rotateY(180deg);
+}
+
+.image_tile.is_flipped {
+  transform: translateX(-100%) rotateY(-180deg);
 }
