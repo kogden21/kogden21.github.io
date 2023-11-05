@@ -1,0 +1,9 @@
+.photos_to_match {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.photos_to_match img {
+  padding: 7px;
+}
