@@ -1,4 +1,5 @@
 document.getElementById("play_button").addEventListener("click", shuffleImages);
+document.getElementById("play_button").addEventListener("click", resetBoard);
 
 let image_tiles = document.getElementsByClassName("image_tile");
 for (let image_tile of image_tiles) {
@@ -7,6 +8,9 @@ for (let image_tile of image_tiles) {
   });
 }
 
+/** 
+ * Shuffles all the image tiles on the board.
+*/
 function shuffleImages() {
   let images = document.getElementsByClassName("image_front");
   let images_src = [];
@@ -30,13 +34,14 @@ function shuffleImages() {
   }
 }
 
-/*
+/** 
+ * Resets the board by flipping over all the image tiles.
+*/
 function resetBoard() {
   let image_tiles = document.getElementsByClassName("image_tile");
 
-  // 
+  // Flip all image tiles back over
   for (let image_tile of image_tiles) {
-    image_tile.classList.toggle("is_flipped");
+    image_tile.classList.add("is_flipped");
   }
 }
-*/
