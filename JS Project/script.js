@@ -1,4 +1,3 @@
-let num_tries = 0;
 let num_matches = 0;
 
 document.getElementById("play_button").addEventListener("click", shuffleImages);
@@ -54,6 +53,8 @@ function resetBoard() {
 
   // Reset header text
   document.getElementById("header").innerHTML = "Welcome to Memory Match!";
+
+  num_matches = 0;
 }
 
 /** 
