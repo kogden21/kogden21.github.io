@@ -51,6 +51,9 @@ function resetBoard() {
   for (let image_tile of image_tiles) {
     image_tile.classList.add("is_flipped");
   }
+
+  // Reset header text
+  document.getElementById("header").innerHTML = "Welcome to Memory Match!!";
 }
 
 /** 
@@ -66,7 +69,11 @@ function checkForMatch() {
 
       picked_tiles[1].classList.remove("is_picked");
       picked_tiles[0].classList.remove("is_picked");
+      
       // Check if all matches are found
+      if (num_matches == 6) {
+        document.getElementById("header").innerHTML = "Congratulations!";
+      }
     }
 
     // If the picked image tiles do not match
