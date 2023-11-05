@@ -1,3 +1,4 @@
+let num_tries = 0;
 let num_matches = 0;
 
 document.getElementById("play_button").addEventListener("click", shuffleImages);
@@ -7,7 +8,9 @@ let image_tiles = document.getElementsByClassName("image_tile");
 for (let image_tile of image_tiles) {
   image_tile.addEventListener("click", function() {
     image_tile.classList.toggle("is_flipped");
-  });
+    image_tile.classList.toggle("is_picked");
+    }
+  );
 
   image_tile.addEventListener("click", checkForMatch);
 }
@@ -50,15 +53,19 @@ function resetBoard() {
   }
 }
 
+/** 
+ * Checks whether the picked image tiles are a match.
+*/
 function checkForMatch() {
-  let picked_tiles = document.getElementsByClassName("image_tile").filter(function() {
-    return !this.classList.contains("is_flipped");
-  });
+  let picked_tiles = document.getElementsByClassName("is_picked");
 
   if (picked_tiles.length == 2) {
     // If the picked image tiles match
     if (picked_tiles[0].children[1].src == picked_tiles[1].children[1].src) {
       num_matches++;
+
+      picked_tiles[1].classList.remove("is_picked");
+      picked_tiles[0].classList.remove("is_picked");
       // Check if all matches are found
     }
 
@@ -66,8 +73,13 @@ function checkForMatch() {
     else {
       // Flip the image tiles back over
       setTimeout(function() {
+        let picked_tiles = document.getElementsByClassName("is_picked");
+        
         picked_tiles[0].classList.add("is_flipped");
         picked_tiles[1].classList.add("is_flipped");
+
+        picked_tiles[1].classList.remove("is_picked");
+        picked_tiles[0].classList.remove("is_picked");
       }, 1000);
     }
   }
