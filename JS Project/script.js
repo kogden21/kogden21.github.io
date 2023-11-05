@@ -53,7 +53,7 @@ function resetBoard() {
   }
 
   // Reset header text
-  document.getElementById("header").innerHTML = "Welcome to Memory Match!!";
+  document.getElementById("header").innerHTML = "Welcome to Memory Match!";
 }
 
 /** 
