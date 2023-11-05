@@ -1,3 +1,5 @@
+let num_matches = 0;
+
 document.getElementById("play_button").addEventListener("click", shuffleImages);
 document.getElementById("play_button").addEventListener("click", resetBoard);
 
@@ -6,6 +8,8 @@ for (let image_tile of image_tiles) {
   image_tile.addEventListener("click", function() {
     image_tile.classList.toggle("is_flipped");
   });
+
+  image_tile.addEventListener("click", checkForMatch);
 }
 
 /** 
@@ -43,5 +47,28 @@ function resetBoard() {
   // Flip all image tiles back over
   for (let image_tile of image_tiles) {
     image_tile.classList.add("is_flipped");
+  }
+}
+
+function checkForMatch() {
+  let picked_tiles = document.getElementsByClassName("image_tile").filter(function() {
+    return !this.classList.contains("is_flipped");
+  });
+
+  if (picked_tiles.length == 2) {
+    // If the picked image tiles match
+    if (picked_tiles[0].children[1].src == picked_tiles[1].children[1].src) {
+      num_matches++;
+      // Check if all matches are found
+    }
+
+    // If the picked image tiles do not match
+    else {
+      // Flip the image tiles back over
+      setTimeout(function() {
+        picked_tiles[0].classList.add("is_flipped");
+        picked_tiles[1].classList.add("is_flipped");
+      }, 1000);
+    }
   }
 }
